@@ -1,0 +1,651 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c4c4c4;
+    color: #333;
+    direction: ltr;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c4c4c4;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #c7dff2, #234158);
+    transition: background 0.3s;
+}
+.fixed-nav.scrolled {
+    background: #d19688;
+}
+
+nav .logo img {
+    height: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: visible;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 10px; /* تعديل الموقع إلى أعلى الزاوية اليسرى */
+    left: 10px;
+    text-align: left; /* تعديل النص ليكون بمحاذاة اليسار */
+    color: white; /* جعل النص باللون الأبيض */
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+.small-image {
+    width: 30px; /* تصغير عرض الصورة */
+    height: auto;
+    margin-top: 10px; /* إضافة مسافة صغيرة بين النص والصورة */
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin-top: 200px;
+}
+
+.intro-text {
+    width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+.intro-image {
+    width: 40%;
+    height: 40%;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* About Us Section */
+#about {
+    padding: 50px;
+    background-color: #dedede;
+    color: #000;
+}
+
+#about h1{
+    text-align: center;
+    margin-left:50px;
+
+
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-content img {
+    width: 30%;
+    height: 40%;
+    margin-right: 20px;
+}
+
+.about-content p {
+    width: 50%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large          
+
+}
+
+.read-more {
+        background: #1d4668;
+        color: #fff;
+        padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out, transform 0.2s;
+    }
+    
+
+.read-more:hover {
+    background-color: #ccc;
+    transform: translateY(-3px);
+}
+
+/* Video Section */
+.video-section {
+    position: relative;
+    height: 200vh;
+    overflow: hidden;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    color: #fff;
+}
+
+.video-overlay img {
+    width: 100px;
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Services Section */
+#services {
+    padding: 50px;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.text_ser {
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #84afdb, #9aaeba);
+    text-align: center;
+    font-size: x-large;
+    text-decoration: wavy;
+    color: white;
+}
+.text_ser:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.text_ser h1 {
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    color:whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    font-style: bold;
+
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+    background-color: #c1c1c1;
+    align-items: stretch;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* لجعل العناصر تظهر بشكل عمودي */
+    align-items: center;
+    
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.service h3 {
+    margin: 10px 0;
+    color: #124158;
+
+}
+
+
+.read-more
+{
+    margin-top: 20px;
+}
+/* Gallery Section */
+#gallery2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+}
+
+.gallery-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.gallery-item.active {
+    opacity: 1;
+}
+/* Contact Us Section */
+#contact {
+    padding: 50px;
+    background: linear-gradient(to right, #84afdb, #9aaeba);
+    color: #13131d;
+    align-items: center;
+}
+.contact_text{
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 60%;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #124158;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items:center ;
+}
+form button:hover {
+    background-color: #9ca7bb;
+    transform: translateY(-3px);
+}
+.contact-info {
+    width: 40%;
+}
+
+#tell {
+    text-align:center ;
+    text-decoration: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    font-size: xx-large;
+    color: #0b2a3a;
+    margin: 50px;
+}
+
+
+/* Map Section */
+.map {
+    margin-top: 50px;
+}
+
+/* Footer */
+footer {
+    padding: 50px;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    position: relative; /* يمكن تغييره إلى absolute حسب الحاجة */
+    bottom: 0;
+    margin-top: auto; 
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-info {
+    text-align: right;
+}
+
+footer .footer-info p {
+    
+    text-align: center;
+}
+
+
+/*  about us page */
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to right, #84afdb, #9aaeba);
+    padding: 50px 20px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 50x 400px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Image Styling */
+.image img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+/* Content Styling */
+.content {
+    max-width: 700px;
+    display: block;
+   
+}
+
+.content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about2 {
+    display: block;
+
+}
+/* Button Styling */
+.learn-more {
+    background: #1d4668;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.learn-more:hover {
+    background: #8cabea;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    
+    .image img {
+        width: 100%;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+/* تنسيق القسم العام */
+.about-us-section {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للقسم بالتوسع مع المحتوى */
+    width: 100%;
+    justify-content: center;
+    padding: 2.5rem;
+    background-color: #f3f4f6;
+    align-items: stretch;
+    min-height: auto; /* تغيير من 100vh إلى auto */
+    flex: 1;
+    margin-bottom: 2rem; /* إضافة مسافة أسفل القسم */
+}
+
+/* القسم الأزرق في اليسار */
+.about-us-left {
+    flex: 1.7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    min-height: 400px; /* ارتفاع أدنى بدلًا من 100vh */
+}
+
+/* تنسيق العنوان داخل القسم الأزرق */
+.about-us-left h1 {
+    position: relative; /* لضمان ظهور العنوان فوق الفيديو */
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ضبط الفيديو ليكون خلف النص */
+.about-us-left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الفيديو يغطي القسم بالكامل */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* القسم النصي في اليمين */
+.about-us-right {
+    flex: 2.3; /* يجعل القسم الأيمن يأخذ ضعف حجم القسم الأيسر */
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    display: inline-block;
+}
+
+/* تنسيق النصوص */
+.about-us-right h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.about-us-right h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.about-us-text {
+    font-size: 1.125rem;
+    color: #374151;
+    line-height: 1.6;
+}
+    
+.about3 {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    width: 100%;
+    margin: 50px auto;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+  
+}
+
+.about3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about3 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about3 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about3:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* تأثيرات التمرير */
+    .show {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
+    
