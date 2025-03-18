@@ -88,6 +88,13 @@ nav ul li a {
     overflow: visible;
 }
 
+#home video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -114,7 +121,8 @@ nav ul li a {
 .small-image {
     width: 30px; /* تصغير عرض الصورة */
     height: auto;
-    margin-top: 10px; /* إضافة مسافة صغيرة بين النص والصورة */
+    margin-top: 0px; /* إضافة مسافة صغيرة بين النص والصورة */
+ 
 }
 
 /* Intro Section */
@@ -123,38 +131,60 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #1f1f1f;
+    background: linear-gradient(to right, #3c7591, #1f1f1f);
     color: #fff;
     margin-top: 200px;
 }
 
+
 .intro-text {
     width: 50%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
+    font-size: xx-large;
+    font-style: bold;
+}
+.intro-text:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
 .intro-image {
     width: 40%;
-    height: 40%;
+    height: 65%;
+    margin-bottom: 10px;
 }
 
+.intro-image:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
 .intro-image img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 300px;
 }
 
 /* About Us Section */
 #about {
     padding: 50px;
-    background-color: #dedede;
+    background: linear-gradient(to right, #e1e3e4, #8bbcd8);
     color: #000;
 }
 
 #about h1{
     text-align: center;
     margin-left:50px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    color: #116378;
+    font-style: bold;
 
+
+}
+
+#about h1:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 
 }
 .about-content {
@@ -170,11 +200,20 @@ nav ul li a {
     margin-right: 20px;
 }
 
+.about-content img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+
+}
+
 .about-content p {
     width: 50%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large          
-
+    font-size: x-large;
+}
+.about-content p:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
 .read-more {
@@ -198,7 +237,6 @@ nav ul li a {
 .video-section {
     position: relative;
     height: 200vh;
-    overflow: hidden;
 }
 
 .video-overlay {
@@ -260,7 +298,8 @@ nav ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 5px;
-    background-color: #c1c1c1;
+    padding: 20px;
+    background: linear-gradient(to right, #e1e3e4, #d3dde3);
     align-items: stretch;
 }
 
@@ -271,6 +310,11 @@ nav ul li a {
     flex-direction: column; /* لجعل العناصر تظهر بشكل عمودي */
     align-items: center;
     
+}
+.service:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+
 }
 
 .service img {
@@ -348,7 +392,10 @@ nav ul li a {
     display: inline-block;
     justify-content: space-between;
     padding: 50px;
-    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-style: bold;
 }
 
 .contact-container {
@@ -393,41 +440,22 @@ form button:hover {
     font-family: 'Courier New', Courier, monospace;
     font-style: bold;
     font-size: xx-large;
-    color: #0b2a3a;
+    color: rgb(65, 79, 125);
     margin: 50px;
 }
+.contact-info.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
 
 
 /* Map Section */
 .map {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
-/* Footer */
-footer {
-    padding: 50px;
-    background-color: #1f1f1f;
-    color: #fff;
-    text-align: center;
-    position: relative; /* يمكن تغييره إلى absolute حسب الحاجة */
-    bottom: 0;
-    margin-top: auto; 
-}
 
-footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .footer-info {
-    text-align: right;
-}
-
-footer .footer-info p {
-    
-    text-align: center;
-}
 
 
 /*  about us page */
@@ -648,4 +676,141 @@ footer .footer-info p {
         opacity: 1 !important;
         transform: translateX(0) !important;
     }
+
+/* contact page */ 
+/* General Page Styling */
+
+
+
+/* Background Gradient */
+#contact-page {
+    background: linear-gradient(135deg, #3a8dde, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+
+    flex-wrap: wrap; /* يسمح للقسم بالتوسع مع المحتوى */
+    align-items: stretch;
+    min-height: auto; /* تغيير من 100vh إلى auto */
+    flex: 1;
+    margin-bottom: 1rem; 
+
+}
+
+/* Contact Wrapper (For Two Sections) */
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Contact Info Box */
+.contact-info {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+  margin-top: 90px;
+  
+}
+
+.contact-info h2 {
+
+    font-size: 32px;
+    color: #116378;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+}
+
+/* Contact Form Styling */
+.contact-container1 {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+/* Title Styling */
+.contact-container1 h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Input Fields */
+.contact-container1 input,
+.contact-container1 textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.contact-container1 button {
+    background-color: #3a8dde;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.contact-container1 button:hover {
+    background-color: #2a6cb3;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 50px;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    position: relative; /* يمكن تغييره إلى absolute حسب الحاجة */
+    bottom: 0;
+    margin-top: auto; 
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-info {
+    text-align: right;
+}
+
+footer .footer-info p {
     
+    text-align: center;
+}

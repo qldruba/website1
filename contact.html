@@ -1,36 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QLDAB - Contact Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+            <!-- Bootstrap Icons-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+            <!-- Google fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+            <!-- SimpleLightbox plugin CSS-->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <title>  QLD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div class="logo-fixed">
-        <img src="logo.png" alt="QLDAB Logo">
-    </div>
-
+    <!-- Header -->
     <header>
-        <h1>QLDAB</h1>
+         <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="logo">
+                <img src="images/logo.png" alt="Company Logo">
+            </div>
+            <ul>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                </ul>
+                <button class="menu-toggle">☰</button>
+            </ul>
+        </nav>
     </header>
+  
+ <section id="contact-page">
+        <div class="contact-wrapper">
+    
+    
+            
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <h2>Get In Touch ..!!</h2>
+                <p>We’d love to hear from you! Whether you have a question about features, pricing, or anything else, our team is ready to answer all your questions.</p>
+                <p><strong>📍 Address:</strong>Flöjelbergsgatan 8B - 43137 Mölndal</p>
+                <p><strong>📧 Email:</strong> info@qld.se</p>
+                <p><strong>📞 Phone:</strong> +46733783710</p>
+            </div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="join.html">Join Us</a></li>
-        </ul>
-    </nav>
+            <!-- Contact Form -->
+            <div class="contact-container1">
+                <h2>Contact Us</h2>
+                <form action="mailto:your-info@qld.se" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="phone" name="number" placeholder="Phone Number" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <textarea name="message" placeholder="Write your message here" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
 
-    <div class="content">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for more information.</p>
-    </div>
-
+        </div>
+    </section>
+  
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 QLDAB. All rights reserved.</p>
+        <div class="footer-content">
+            <div>
+                <h2> Your best choice ..!</h2>
+            </div>
+            </div>
+            <div class="footer-info">
+                <p><i class="fas fa-map-marker-alt"></i> Flöjelbergsgatan 8B - 43137 Mölndal</p>
+                <p><i class="fas fa-phone"></i>  +4673-3783710</p>
+            </div>
+            <br>
+            <div>
+                <p>© 2025 QLD - All Rights Reserved</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
