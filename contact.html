@@ -45,8 +45,6 @@
  <section id="contact-page">
         <div class="contact-wrapper">
     
-    
-            
             <!-- Contact Info Section -->
             <div class="contact-info">
                 <h2>Get In Touch ..!!</h2>
@@ -70,7 +68,102 @@
 
         </div>
     </section>
-  
+  <section id="order1">
+    <!-- order section-->
+
+    <div class="order">
+        <h2>Order Now</h2>
+        <form id="shipment-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="size">Parcel Volume (cubic meters)</label>
+                <input type="number" id="size" name="size" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="length">Length (cm)</label>
+                <input type="number" id="length" name="length" required>
+            </div>
+            <div class="form-group">
+                <label for="width">Width (cm)</label>
+                <input type="number" id="width" name="width" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+
+            <!-- Destination Input and Google Map -->
+            <div class="form-group">
+                <label for="destination">Destination (Choose from Map):</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter or select destination from map" required>
+            </div>
+
+            <div class="map-container" id="map"></div>
+
+            <!-- Estimated Price Display -->
+            <div class="price-display" id="price-display">
+                Estimated Price: Will be calculated after entering data.
+            </div>
+
+            <!-- Payment Button (for demo purposes, here we simulate PayPal button) -->
+            <div class="payment-button">
+                <button type="button" onclick="simulatePayment()">Proceed to Payment</button>
+            </div>
+
+            <!-- Question: Individual or Company -->
+            <div class="form-group">
+                <label for="client-type">?Are you an Individual or a Company</label>
+                <select id="client-type" name="client-type" required>
+                    <option value="individual">Individual</option>
+                    <option value="company">Company</option>
+                </select>
+            </div>
+
+            <!-- Email for the company -->
+            <div class="form-group">
+                <label for="company-email">Company Email:</label>
+                <input type="email" id="company-email" name="company-email" value="info@qld.se" readonly required>
+            </div>
+
+            <!-- WhatsApp contact -->
+            <div class="contact-buttons">
+                <a href="https://wa.me/+46733783710" target="_blank">Contact us on WhatsApp</a>
+                <a href="mailto:info@qld.se">Send an Email</a>
+            </div>
+        </form>
+    </div>
+
+
+
+
+  </section>
+
+  <script>
+   function initMap() {
+    const location = { lat: 59.3293, lng: 18.0686 }; // إحداثيات ستوكهولم
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: location,
+    });
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+    });
+}
+
+// تحميل مكتبة Google Maps
+window.onload = function() {
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+    script.async = true;
+    document.body.appendChild(script);
+};
+</script>
+
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
