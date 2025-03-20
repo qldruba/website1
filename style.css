@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -55,6 +55,8 @@ nav .logo img {
 }
 .nav-links a:hover {
     color: #333;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;   
 }
 
 nav ul {
@@ -140,7 +142,7 @@ nav ul li a {
 .intro-text {
     width: 50%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
+    font-size: 23PX;
     font-style: bold;
 }
 .intro-text:hover{
@@ -274,6 +276,7 @@ nav ul li a {
     font-size: x-large;
     text-decoration: wavy;
     color: white;
+    margin-top: 25px;
 }
 .text_ser:hover {
     transform: scale(1.05);
@@ -334,6 +337,81 @@ nav ul li a {
 {
     margin-top: 20px;
 }
+
+.text_ser1 {
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #84afdb, #9aaeba);
+    text-align: center;
+    font-size: x-large;
+    text-decoration: wavy;
+    color: white;
+    width: 100%;
+}
+.text_ser1:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.text_ser1 h1 {
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    color:whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    font-style: bold;
+
+}
+
+.ser-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 20px;
+    background: linear-gradient(to right, #e1e3e4, #d3dde3);
+    align-items: stretch;
+    margin-top: 15px;
+}
+
+.serv {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* لجعل العناصر تظهر بشكل عمودي */
+    align-items: center;
+    
+}
+.serv:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.serv img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.serv h3 {
+    margin: 10px 0;
+    color: #124158;
+
+}
+
+
+.read-more
+{
+    margin-top: 20px;
+}
+
+
 /* Gallery Section */
 #gallery2 {
     display: flex;
@@ -676,7 +754,96 @@ form button:hover {
         opacity: 1 !important;
         transform: translateX(0) !important;
     }
+/* img section */
+    /* تنسيق السكشن */
+    .photo-ab-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background: linear-gradient(to right, #84afdb, #9aaeba);    }
 
+    /* تنسيق الصفوف */
+    .photo-ab-row {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* تنسيق العناصر */
+    .photo-ab-item {
+        text-align: center;
+        width: 30%;
+    }
+
+    /* تنسيق الصور */
+    .photo-ab-img {
+        width: 300px;
+        height: 250px;
+        margin-bottom: 10px;
+        border-radius: 10px; 
+    }
+
+    /* تنسيق العناوين */
+    .photo-ab-title {
+        margin: 0;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: bold;
+    }
+
+    .photo-ab-item:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    /* تنسيق النصوص الوصفية */
+    .photo-ab-description {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .text-aboutus {
+        align-items: center;
+        display: inline-block;
+        justify-content: space-between;
+        padding: 50px;
+        background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        text-align: center;
+        font-size: x-large;
+        text-decoration: wavy;
+        color: white;
+        margin-top: 25px;
+    }
+    .text-aboutus:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    
+    
+    .text-aboutus h1 {
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: x-large;
+        color:whitesmoke;
+        text-align: center;
+        font-size: xx-large;
+        font-style: bold;
+    
+    } 
+    .text-aboutus p{
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: large;
+        color:whitesmoke;
+        text-align: center;
+        font-size: xx-large;
+        font-style: bold;
+    }
 /* contact page */ 
 /* General Page Styling */
 
@@ -856,13 +1023,78 @@ form button:hover {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
 }
+ /* تنسيق السكشن */
+ .recruitment-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
-/*order style*/
-#order1{
+.recruitment-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* تنسيق العنوان الرئيسي */
+.recruitment-title {
+    text-align: center;
+    margin-left:50px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #116378;
+    font-style: bold;
+}
+
+/* تنسيق العنوان الفرعي */
+.recruitment-subtitle {
+    text-align: center;
+    margin-left:50px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #116378;
+    font-style: bold;
+}
+
+/* تنسيق النصوص */
+.recruitment-description {
+    color: #666;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+/* تنسيق قسم الفرق */
+.teams-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.team {
+    text-align: center;
+    width: 45%;
+}
+
+.team-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-title {
+    font-size: 20px;
+    color: #333;
+}
+
+
+    /*order style*/
+ /*order style*/
+ #order1 {
     background: linear-gradient(135deg, #3a8dde, #ffffff);
     margin-top: 0px;
     margin-bottom: 20px;
-
 }
 
 .order {
@@ -874,15 +1106,14 @@ form button:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    margin-top:20px ;
+    margin-top: 20px;
 }
 
 .order h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 35px;
-    color: #116378
-    
+    color: #116378;
 }
 
 .form-group {
@@ -906,7 +1137,7 @@ input[type="text"], input[type="number"], select {
     box-sizing: border-box;
 }
 
-.payment-button{
+.payment-button {
     width: 100%;
     padding: 12px;
     background-color: #4CAF50;
@@ -961,33 +1192,443 @@ input[type="text"], input[type="number"], select {
     background-color: #128C7E;
 }
 
+/*  ser1 page */
+
+.serv1_pg {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للقسم بالتوسع مع المحتوى */
+    width: 100%;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #84afdb, #9aaeba);
+    align-items: stretch;
+    min-height: auto; /* تغيير من 100vh إلى auto */
+    flex: 1;
+}
+
+.serv1-left {
+    flex: 1.7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    min-height: 400px; /* ارتفاع أدنى بدلًا من 100vh */
+}
 
 
-/* Footer */
-footer {
+.serv1-left h1 {
+    position: relative; /* لضمان ظهور العنوان فوق الفيديو */
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* text in img */
+.serv1-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الفيديو يغطي القسم بالكامل */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* القسم النصي في اليمين */
+.serv1-right {
+    text-align: center;
+    flex: 2.3; /* يجعل القسم الأيمن يأخذ ضعف حجم القسم الأيسر */
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    display: inline-block;
+
+}
+
+/* تنسيق النصوص */
+.serv1-right h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1e3a8a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+    margin-top: 10px;
+
+}
+.serv1-right-text {
+    font-size: 25px;
+    color: #374151;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+}
+
+/*tow*/
+.serv1_pg2 {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للقسم بالتوسع مع المحتوى */
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(to right, #84afdb, #9aaeba);
+    padding: 50px 20px;
+    align-items: stretch;
+    min-height: auto; /* تغيير من 100vh إلى auto */
+    flex: 1;
+   
+}
+
+.serv1-right2 {
+    flex: 1.7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+}
+.serv1-right2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} 
+.serv1-left2 {
+    text-align: center;
+    flex: 2.3; 
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    display: inline-block;
+
+}
+
+/* تنسيق النصوص */
+.serv1-left2 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1e3a8a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+    margin-top: 10px;
+
+}
+.serv1-right-text2 {
+    font-size: 25px;
+    color: #374151;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+}
+
+/*serv3 page */
+#serv3-pg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #b6cbdf, #82acc5);
+    align-items: stretch;
+}
+
+.serv3-sec {
+        background: linear-gradient(135deg, #4772e7, #3b82f6);
+        color: white;
+        text-align: center;
+        padding: 3rem 2rem;
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 10PX;
+        margin-bottom: 50px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        min-height: 300px;
+        transform: translateY(30px);
+        transition: all 0.8s ease-in-out;
+      
+    }
+    .serv3-sec.hover {
+        opacity: 1;
+        transform: translateY(2);
+    }
+    
+    .serv3-sec  h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    
+    .serv3-sec p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .serv3-sec :hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+    .serv3-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* الفارق بين العناصر */
+        padding: 20px; /* تباعد داخلي */
+    }
+    
+    .cont-serv3 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px; /* الفارق بين العناصر */
+        justify-content: center;
+    }
+    
+    .cont {
+        text-align: center;
+    }
+    
+    .cont img {
+        width: 350px; /* حجم الصورة المتوسط */
+        height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+        border-radius: 8px; /* زوايا مدورة */
+        transition: transform 0.3s ease; /* تأثير عند التمرير */
+    }
+    
+    .cont img:hover {
+        transform: scale(1.05); /* تكبير الصورة قليلاً عند التمرير */
+    }
+    
+    .cont h1 {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #333;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+/*service 1 page*/
+#service1_pg{
+    background: linear-gradient(135deg, #3a8dde, #ffffff);
+}
+
+.image-text-section1{
+    width: 100%;
+    max-width: 1200px; /* تحديد عرض máximo للسكشن */
+    margin: 0 auto; /* توسيط السكشن */
+    padding: 40px 20px; /* تباعد داخلي */
+    background-color: whitesmoke;
+}
+
+.row {
+    display: flex;
+    align-items: center; /* توسيط العناصر عموديًا */
+    gap: 40px; /* الفارق بين الصورة والنص */
+    margin-bottom: 60px; /* تباعد بين الصفوف */
+}
+
+.row.reverse {
+    flex-direction: row-reverse; /* عكس الترتيب للصف الثاني */
+}
+
+.image-container1 {
+    flex: 1; /* جعل الصورة تأخذ مساحة متساوية */
+}
+
+.image-container1 img {
+    width: 100%; /* جعل الصورة تشغل المساحة الكاملة */
+    height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+    border-radius: 8px; /* زوايا مدورة */
+}
+
+.text-container-service_pg {
+    flex: 1; /* جعل النص يأخذ مساحة متساوية */
+}
+
+.text-container-service_pg h2 {
+    font-size: 24px;
+    color: #116378;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-container-service_pg p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* service 2 page */
+#service2_pg{
+    background: linear-gradient(135deg, #3a8dde, #ffffff);
+}
+
+.full-width-section {
+    width: 100%; /* يشغل العرض الكامل */
+    background-color: #f9f9f9; /* لون خلفية السكشن */
+    padding: 60px 0; /* تباعد داخلي عمودي */
+}
+
+.content-wrapper30 {
+    display: flex;
+    align-items: center; /* توسيط العناصر عموديًا */
+    max-width: 1200px; /* تحديد عرض máximo للمحتوى */
+    margin: 0 auto; /* توسيط المحتوى */
+}
+
+.text-container30 {
+    flex: 1; /* يشغل نصف المساحة */
+    padding-right: 40px; /* تباعد بين النص والصورة */
+}
+
+.text-container30 h2 {
+    font-size: 32px;
+    color: #116378;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-container30 p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image-container30 {
+    flex: 1; /* يشغل نصف المساحة */
+}
+
+.image-container30 img {
+    width: 100%; /* جعل الصورة تشغل المساحة الكاملة */
+    height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+    border-radius: 8px; /* زوايا مدورة */
+}
+
+/* service 3 page */
+#service3_pg{
+    background: linear-gradient(135deg, #3a8dde, #ffffff);
+}
+.image-text-section3{
+    width: 100%;
+    max-width: 1200px; /* تحديد عرض máximo للسكشن */
+    margin: 0 auto; /* توسيط السكشن */
+    padding: 40px 20px; /* تباعد داخلي */
+    background-color: whitesmoke;
+}
+
+.row {
+    display: flex;
+    align-items: center; /* توسيط العناصر عموديًا */
+    gap: 40px; /* الفارق بين الصورة والنص */
+    margin-bottom: 60px; /* تباعد بين الصفوف */
+}
+
+.row.reverse {
+    flex-direction: row-reverse; /* عكس الترتيب للصف الثاني */
+}
+
+.image-container3 {
+    flex: 1; /* جعل الصورة تأخذ مساحة متساوية */
+}
+
+.image-container3 img {
+    width: 100%; /* جعل الصورة تشغل المساحة الكاملة */
+    height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+    border-radius: 8px; /* زوايا مدورة */
+}
+.image-container3:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.text-container-service_pg {
+    flex: 1; /* جعل النص يأخذ مساحة متساوية */
+}
+.text-container-service_pg:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;   
+}
+
+.text-container-service_pg h1 {
+    font-size: 24px;
+    color: #116378;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-container-service_pg h2 {
+    font-size: 24px;
+    color: #116378;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-container-service_pg p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ /* Footer */
+ footer {
     padding: 50px;
     background-color: #1f1f1f;
     color: #fff;
     text-align: center;
-    position: relative; /* يمكن تغييره إلى absolute حسب الحاجة */
+    position: relative;
     bottom: 0;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 footer .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
-footer h2{
+
+footer h2 {
     color: white;
 }
 
 footer .footer-info {
-    text-align: right;
+    text-align: center;
 }
 
 footer .footer-info p {
-    
-    text-align: center;
+    margin: 5px 0;
+}
+
+footer h2:hover,
+.footer-info:hover,
+.footer-content:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* الأيقونات */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-icons .icon-link {
+    color: white;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-icons .icon-link:hover {
+    color: #3a8dde; /* لون الأيقونات عند التمرير */
+    transform: scale(1.2);
 }
